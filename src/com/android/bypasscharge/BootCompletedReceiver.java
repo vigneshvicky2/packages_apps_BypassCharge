@@ -41,7 +41,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         boolean bypasschargeEnabled = sharedPrefs.getBoolean(mConfig.BYPASSCHARGE_KEY, false);
-        FileUtils.writeLine(mConfig.getBypassChargePath(), bypasschargeEnabled ? "0" : "1");
+        FileUtils.writeLine(mConfig.getBypassChargePath(), bypasschargeEnabled ? "3" : "2");
 
     }
 }

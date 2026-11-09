@@ -97,7 +97,7 @@ public class BypassChargeFragment extends SettingsBasePreferenceFragment impleme
 
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
 
-            FileUtils.writeLine(mConfig.getBypassChargePath(), (Boolean) newValue ? "0":"1");
+            FileUtils.writeLine(mConfig.getBypassChargePath(), (Boolean) newValue ? "3" : "2");
 
             boolean enabled = mConfig.isCurrentlyEnabled(mConfig.getBypassChargePath());
 

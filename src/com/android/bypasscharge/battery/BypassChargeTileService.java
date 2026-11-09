@@ -86,7 +86,7 @@ public class BypassChargeTileService extends TileService {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         boolean enabled = !mConfig.isCurrentlyEnabled(mConfig.getBypassChargePath());
-        FileUtils.writeLine(mConfig.getBypassChargePath(), enabled ? "0" : "1");
+        FileUtils.writeLine(mConfig.getBypassChargePath(), enabled ? "3" : "2");
 
         sharedPrefs.edit().putBoolean(mConfig.BYPASSCHARGE_KEY, enabled).commit();
 

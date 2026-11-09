@@ -53,6 +53,7 @@ public class BypassChargeConfig {
     }
 
     public boolean isCurrentlyEnabled(String node) {
-        return FileUtils.getNodeValueAsBoolean(node, false);
+        String v = FileUtils.readOneLine(node);
+        return v != null && v.trim().equals("3");
     }
  }

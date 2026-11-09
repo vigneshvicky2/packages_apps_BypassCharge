@@ -15,5 +15,5 @@
 <resources>
 
     <!-- Path to Bypass Charging sysfs node -->
-    <string name="config_BypassChargePath" translatable="false">/sys/class/oplus_chg/battery/mmi_charging_enable</string>
+    <string name="config_BypassChargePath" translatable="false">/sys/class/power_supply/battery/smart_chg</string>
 </resources>
